@@ -1,0 +1,7 @@
+('z:\\PROJECT_O\\CODE\\CODE\\AIAssistant\\.venv\\share\\glew\\bin',
+ None,
+ [],
+ 'DATA',
+ [('glew32.dll',
+   'z:\\PROJECT_O\\CODE\\CODE\\AIAssistant\\.venv\\share\\glew\\bin\\glew32.dll',
+   'DATA')])

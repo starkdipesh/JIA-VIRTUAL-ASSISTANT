@@ -1,0 +1,293 @@
+ScreenManager:
+    LOGIN
+    REGISTER
+    HomePage
+    TalkPage
+<LOGIN>:
+    name:"login"
+    MDScreen:
+        md_bg_color: [35/255, 59/255, 54/255, 1]
+        FloatLayout:
+            Image:
+                source:'lgimg/loginbg.png'
+                allow_stretch:True
+                keep_ratio:False
+                size_hint:(1,1)
+        MDCard:
+            size_hint: None, None
+            size: (320, 400)
+            pos_hint: {"center_x": .5, "center_y": .5}
+            elevation: 15
+            md_bg_color: [35/255, 49/255, 48/255, 0.5]
+            padding: 20
+            spacing: 30
+            orientation: "vertical"
+            MDLabel:
+                text: 'LOGIN'
+                font_style: 'Button'
+                font_size: 45
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 15
+            MDTextField:
+                id:userName
+                hint_text: "User Name"
+                icon_right: "account"
+                size_hint_x: None
+                width: 220
+                font_size: 20
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+            MDTextField:
+                id: pswd
+                hint_text: "Password"
+                icon_right: "eye-off"
+                size_hint_x: None
+                width: 220
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+                password: True
+            BoxLayout:
+                orientation:'horizontal'
+                spacing:30
+                size_hint_x:None
+                height:'60dp'
+                width:220
+                pos_hint:{'center_x':0.5,'center_y':0.5}
+
+                MDRoundFlatButton:
+                    id: signup
+                    text: "LOGIN"
+                    pos_hint: {"center_x": 0.5,"center_y":0.5}
+                    font_size: 15
+                    on_release:
+                        root.validateCredential()
+                
+                MDRoundFlatButton:
+                    id: signin
+                    text: "REGISTER"
+                    pos_hint: {"center_x": 0.5,"center_y":0.5}
+                    font_size: 15
+                    on_release:
+                        root.manager.transition.direction='left'
+                        root.manager.current='register'
+
+<REGISTER>:
+    name:"register"
+    MDScreen:
+        md_bg_color: [35/255, 59/255, 54/255, 1]
+        FloatLayout:
+            Image:
+                source:'lgimg/registerbg.png'
+                allow_stretch:True
+                keep_ratio:False
+                size_hint:(1,1)
+        MDCard:
+            size_hint: None, None
+            size: (400, 500)
+            pos_hint: {"center_x": .5, "center_y": .5}
+            elevation: 15
+            md_bg_color: [35/255, 49/255, 48/255, 0.5]
+            padding: 20
+            spacing: 5
+            orientation: "vertical"
+            MDLabel:
+                text: 'REGISTER'
+                font_style: 'Button'
+                font_size: 45
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 15
+            
+            MDTextField:
+                id:userName
+                hint_text: "User Name"
+                icon_right: "account"
+                size_hint_x: None
+                width: 220
+                font_size: 20
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+            MDTextField:
+                id:emailId
+                hint_text: "Email ID"
+                icon_right: "email"
+                size_hint_x: None
+                width: 220
+                font_size: 20
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+            MDTextField:
+                id:dob
+                hint_text: "Date Of Birth"
+                icon_right: "calendar"
+                size_hint_x: None
+                width: 220
+                font_size: 20
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+            MDTextField:
+                id: pswd
+                hint_text: "Password"
+                icon_right: "eye-off"
+                size_hint_x: None
+                width: 220
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+                password: True
+            MDTextField:
+                id: cmpswd
+                hint_text: "Confirm Password"
+                icon_right: "eye-off"
+                size_hint_x: None
+                width: 220
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+                password: True
+            BoxLayout:
+                orientation:'horizontal'
+                spacing:30
+                size_hint_x:None
+                height:'60dp'
+                width:220
+                pos_hint:{'center_x':0.5,'center_y':0.5}
+                MDRoundFlatButton:
+                    id: signin
+                    text: "REGISTER"
+                    pos_hint: {"center_x": 0.5,"center_y":0.5}
+                    font_size: 15
+                    on_release:
+                        root.validate_form()
+                               
+                MDRoundFlatButton:
+                    id: signup
+                    text: "LOGIN"
+                    pos_hint: {"center_x": 0.5,"center_y":0.5}
+                    font_size: 15
+                    on_release:
+                        root.manager.transition.direction='right'
+                        root.manager.current='login'
+<HomePage>:
+    name: "homepage"
+    MDScreen:
+        md_bg_color: [35/255, 59/255, 54/255, 1]
+        FloatLayout:
+            Image:
+                source: 'aimg/ai.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: (1, 1)
+
+        MDCard:
+            size_hint: None, None
+            size: (500, 450)
+            pos_hint: {"center_x": .5, "center_y": .5}
+            elevation: 15
+            md_bg_color: [35/255, 49/255, 48/255, 0.5]
+            padding: 20
+            spacing: 30
+            orientation: "vertical"
+            
+            MDLabel:
+                text: 'VIRTUAL ASSISTANT'
+                font_style: 'Button'
+                font_size: 45
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 15
+
+            MDTextField:
+                id: query
+                hint_text: "Enter Query"
+                icon_right: "pencil"
+                size_hint_x: None
+                width: 450
+                font_size: 15
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+
+            MDTextField:
+                id: output
+                hint_text: "J.I.A "
+                icon_right: "laptop"
+                size_hint_x: None
+                multiline:True
+                width: 450
+                font_size: 10
+                pos_hint: {"center_x": .5}
+                color_active: [1, 1, 1, 1]
+
+            # BoxLayout for buttons
+            BoxLayout:
+                orientation: 'horizontal'
+                spacing: 125  # Reduced spacing between buttons
+                size_hint_y: None
+                height: '60dp'  # Control button row height
+                width: 320  # Control width to make buttons fit
+                pos_hint: {'center_x': 0.5}
+
+                MDRoundFlatButton:
+                    id: send
+                    text: "Send"
+                    pos_hint: {"center_y": 0.5}
+                    font_size: 15
+                    size_hint_x: None
+                    width: 200  # Set fixed width for uniform button size
+                    on_release:
+                        root.processinput()
+
+                MDRoundFlatButton:
+                    id: delete
+                    text: "Delete"
+                    pos_hint: {"center_y": 0.5}
+                    font_size: 15
+                    size_hint_x: None
+                    width: 200  # Set fixed width for uniform button size
+                    on_release:
+                        root.deleteQuerys()
+
+                MDRoundFlatButton:
+                    id: talk
+                    text: "Talk"
+                    pos_hint: {"center_y": 0.5}
+                    font_size: 15
+                    size_hint_x: None
+                    width: 200  # Set fixed width for uniform button size
+                    on_release: root.go_to_talk()
+        MDRoundFlatButton:
+            text: "LOGOUT"
+            pos_hint:{"center_x":0.1,"center_y":0.2}
+            font_size:15
+            size_hint_x:None
+            width: 70
+            on_release:
+                root.manager.transition.direction='right'
+                root.manager.current='login'
+
+<TalkPage>:
+    name: "talkpage"
+    MDFloatLayout:
+        Video:
+            id: bg_video
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            volume: 0  # Mute audio
+        
+        MDTopAppBar:
+            title: "J.I.A."
+            left_action_items: [["arrow-left", lambda x: setattr(app.root, 'current', 'homepage')]]
+            md_bg_color: app.theme_cls.primary_color[:-1] + [0.5]
+            specific_text_color: (1, 1, 1, 1)
+            elevation: 0
+            pos_hint: {"top": 1}
+        
+        # Add other talk screen content here
+        MDLabel:
+            text: ""
+            halign: "center"
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+
+    
