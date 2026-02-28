@@ -1,0 +1,247 @@
+# JIA - Jetpack Intelligent Assistant
+# Requirements File - All Project Dependencies
+#
+# Generated from actual .venv installation
+# Install with: pip install -r requirements.txt
+#
+# Total Packages: 170+
+# Python Version: 3.12+
+
+# ============================================================================
+# CORE GUI FRAMEWORK
+# ============================================================================
+Kivy==2.3.1
+kivy-deps.angle==0.4.0
+kivy-deps.glew==0.3.1
+kivy-deps.sdl2==0.8.0
+Kivy-Garden==0.1.5
+KivyMD==1.2.0
+
+# ============================================================================
+# ARTIFICIAL INTELLIGENCE & LANGUAGE MODELS
+# ============================================================================
+google-generativeai==0.8.4
+google-ai-generativelanguage==0.6.15
+languagemodels==0.23.0
+langchain-community==0.3.16
+langchain-google-vertexai==2.0.13
+langchain-openai==0.3.4
+langchain-text-splitters==0.3.6
+langsmith==0.3.6
+transformers==4.47.1
+huggingface-hub==0.27.0
+tokenizers==0.21.0
+safetensors==0.4.5
+ollama==0.4.7
+openai==1.58.1
+wolframalpha==2.4
+
+# ============================================================================
+# SPEECH PROCESSING & AUDIO
+# ============================================================================
+SpeechRecognition==3.8.1
+pyttsx3==2.71
+playsound==1.2.2
+vosk==0.3.45
+PyAudio==0.2.14
+mixer==7.2.2
+ffpyplayer==4.5.2
+pygame==2.6.1
+
+# ============================================================================
+# TRANSLATION & LANGUAGE SERVICES
+# ============================================================================
+googletrans==4.0.2
+gTTS==2.5.4
+ctranslate2==4.5.0
+
+# ============================================================================
+# DATABASE & DATA PERSISTENCE
+# ============================================================================
+mysql-connector==2.2.9
+PyMySQL==1.1.1
+SQLAlchemy==2.0.38
+
+# ============================================================================
+# WEB & HTTP REQUESTS
+# ============================================================================
+requests==2.32.3
+requests-toolbelt==1.0.0
+beautifulsoup4==4.12.3
+bs4==0.0.2
+soupsieve==2.6
+
+# ============================================================================
+# SYSTEM AUTOMATION & HARDWARE CONTROL
+# ============================================================================
+PyAutoGUI==0.9.54
+pynput==1.7.7
+plyer==2.1.0
+
+# ============================================================================
+# WEB AUTOMATION & UTILITIES
+# ============================================================================
+selenium==4.27.1
+webdriver-manager==4.0.2
+pywhatkit==5.4
+wikipedia==1.4.0
+pycricbuzz==2.4
+pyspeedtest==1.2.7
+
+# ============================================================================
+# WEB FRAMEWORK
+# ============================================================================
+Flask==3.1.0
+Werkzeug==3.1.3
+Jinja2==3.1.5
+MarkupSafe==3.0.2
+itsdangerous==2.2.0
+click==8.1.8
+
+# ============================================================================
+# DATA & CONFIGURATION
+# ============================================================================
+pydantic==2.10.4
+pydantic-core==2.27.2
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+PyYAML==6.0.2
+marshmallow==3.26.1
+dataclasses-json==0.6.7
+
+# ============================================================================
+# API & COMMUNICATION
+# ============================================================================
+protobuf==5.29.3
+grpcio==1.70.0
+grpcio-status==1.70.0
+googleapis-common-protos==1.67.0rc1
+google-api-core==2.24.1
+google-api-python-client==2.160.0
+google-auth==2.38.0
+google-auth-httplib2==0.2.0
+google-cloud-core==2.4.1
+google-cloud-aiplatform==1.79.0
+google-cloud-bigquery==3.29.0
+google-cloud-storage==2.19.0
+google-crc32c==1.6.0
+google-resumable-media==2.7.2
+httpx==0.28.1
+httpx-sse==0.4.0
+httpcore==1.0.7
+httplib2==0.22.0
+aiohttp==3.11.12
+websockets==14.1
+websocket-client==1.8.0
+
+# ============================================================================
+# ASYNC & CONCURRENCY
+# ============================================================================
+aiosignal==1.3.2
+aiohappyeyeballs==2.4.4
+anyio==4.7.0
+sniffio==1.3.1
+trio==0.28.0
+trio-websocket==0.11.1
+greenlet==3.1.1
+outcome==1.3.0.post0
+
+# ============================================================================
+# DATA PROCESSING & UTILITIES
+# ============================================================================
+numpy==2.2.0
+matplotlib==3.10.0
+pillow==11.0.0
+shapely==2.0.7
+regex==2024.11.6
+tqdm==4.67.1
+tenacity==9.0.0
+
+# ============================================================================
+# SERIALIZATION & PARSING
+# ============================================================================
+orjson==3.10.15
+jsonpatch==1.33
+jsonpointer==3.0.0
+charset-normalizer==3.4.0
+
+# ============================================================================
+# DEPLOYMENT & BUILD
+# ============================================================================
+PyInstaller==6.11.1
+pyinstaller-hooks-contrib==2025.1
+setuptools==75.6.0
+wheel==0.44.0
+pip==25.0.1
+
+# ============================================================================
+# UTILITIES & SUPPORT
+# ============================================================================
+colorama==0.4.6
+six==1.17.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+tzdata==2024.2
+typing-extensions==4.12.2
+typing-inspect==0.9.0
+mypy-extensions==1.0.0
+attrs==24.3.0
+annotated-types==0.7.0
+packaging==24.2
+filelock==3.16.1
+distro==1.9.0
+altgraph==0.17.4
+blinker==1.9.0
+cachetools==5.5.1
+cffi==1.17.1
+contourpy==1.3.1
+cycler==0.12.1
+docstring-parser==0.16
+docutils==0.21.2
+fonttools==4.55.3
+frozenlist==1.5.0
+fsspec==2024.10.0
+grpc-google-iam-v1==0.14.0
+h11==0.14.0
+h2==4.1.0
+hpack==4.0.0
+hyperframe==6.0.1
+idna==3.10
+jiter==0.8.2
+kiwisolver==1.4.8
+multidict==6.1.0
+notification==0.2.1
+pefile==2023.2.7
+propcache==0.2.1
+proto-plus==1.26.0
+pyasn1==0.6.1
+pyasn1-modules==0.4.1
+pycparser==2.22
+pygments==2.18.0
+pyparsing==3.2.1
+rsa==4.9
+srt==3.5.3
+sqlparse==0.5.2
+tiktoken==0.8.0
+urllib3==2.2.3
+uritemplate==4.1.1
+Wave==0.0.2
+wsproto==1.2.0
+yarl==1.18.3
+zstandard==0.23.0
+Faker==12.0.1
+filetype==1.2.0
+WMI==1.5.1
+comtypes==1.4.8
+pywin32==308
+pywin32-ctypes==0.2.3
+pypiwin32==223
+PyGetWindow==0.0.9
+PyMsgBox==1.0.9
+PyPerClip==1.9.0
+PyRect==0.2.0
+PyScreeze==1.0.1
+PySocks==1.7.1
+pytweening==1.2.0
+MouseInfo==0.1.3
+asgiref==3.8.1

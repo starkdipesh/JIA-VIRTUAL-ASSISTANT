@@ -281,7 +281,18 @@ source venv/bin/activate
 ### Step 3: Install Dependencies
 ```bash
 cd CODE/CODE/AIAssistant
+pip install -r ../../../requirements.txt
+```
+
+**Alternative Installation (Specific to AIAssistant directory):**
+```bash
+# If running from within AIAssistant directory
 pip install -r requirements.txt
+```
+
+**Verify Installation:**
+```bash
+python -c "import kivy; import kivymd; import speech_recognition; print('All dependencies installed successfully!')"
 ```
 
 ### Step 4: Setup MySQL Database
