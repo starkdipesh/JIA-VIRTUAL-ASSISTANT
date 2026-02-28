@@ -12,7 +12,7 @@
 
 ## 📋 Overview
 
-**JIA (Jetpack Intelligent Assistant)** is an enterprise-grade conversational AI system engineered for real-time voice interaction and intelligent task automation. It demonstrates advanced expertise in AI/NLP, speech processing, distributed systems, and software engineering practices.
+**JIA (Junior Intelligent Assistant)** is an enterprise-grade conversational AI system engineered for real-time voice interaction and intelligent task automation. It demonstrates advanced expertise in AI/NLP, speech processing, distributed systems, and software engineering practices.
 
 ### Project Vision
 JIA bridges the gap between human-computer interaction through natural language understanding and speech synthesis, creating a seamless, multi-modal interface for intelligent task execution. The system architecture emphasizes modularity, scalability, and robustness in handling asynchronous operations and API rate-limiting scenarios.
