@@ -1,4 +1,4 @@
-# JIA - Jetpack Intelligent Assistant
+# JIA - Junior Intelligent Assistant System
 
 > **Enterprise-Grade Conversational AI System with Real-Time Speech Processing, Natural Language Understanding, and Distributed Voice Command Architecture**
 
